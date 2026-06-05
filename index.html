@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request Queue System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Request Queue System</h1>
+
+    <input type="text" id="requestInput" placeholder="Enter Request">
+
+    <button id="addBtn">Add Request</button>
+
+    <h2>Statistics</h2>
+
+    <p>Total: <span id="total">0</span></p>
+    <p>Pending: <span id="pending">0</span></p>
+    <p>Processed: <span id="processed">0</span></p>
+    <p>Cancelled: <span id="cancelled">0</span></p>
+
+    <button id="processBtn">Process Next</button>
+
+    <br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Request</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="requestTable">
+        </tbody>
+    </table>
+
+    <script src="queue.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
