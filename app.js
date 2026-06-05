@@ -33,6 +33,7 @@ function displayRequests() {
         <tr>
             <td>${request.id}</td>
             <td>${request.name}</td>
+            <td>${request.timestamp}</td>
             <td>${request.status}</td>
             <td>
                 <button onclick="cancelRequest(${request.id})">

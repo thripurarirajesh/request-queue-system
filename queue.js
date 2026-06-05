@@ -5,12 +5,14 @@
     }
 
     addRequest(name) {
-        this.queue.push({
-            id: this.nextId++,
-            name,
-            status: "Pending"
-        });
-    }
+    this.queue.push({
+        id: this.nextId++,
+        name,
+        status: "Pending",
+        timestamp: new Date().toLocaleString()
+    });
+}
+     
 
     processNext() {
         const request = this.queue.find(
