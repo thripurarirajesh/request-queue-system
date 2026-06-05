@@ -88,6 +88,41 @@ Returns:
 * Local storage support
 * User authentication
 * Request timestamps
+* ## Test Cases
+
+### Test Case 1: Add Request
+
+Input: Login Request
+
+Expected Result:
+
+* Request added successfully
+* Status = Pending
+
+### Test Case 2: Empty Input
+
+Input: Empty Request
+
+Expected Result:
+
+* Alert message displayed
+
+### Test Case 3: Process Request
+
+Action: Click Process Next
+
+Expected Result:
+
+* First pending request becomes Processed
+
+### Test Case 4: Cancel Request
+
+Action: Click Cancel
+
+Expected Result:
+
+* Request status becomes Cancelled
+
 
 ## Author
 
