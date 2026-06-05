@@ -30,18 +30,18 @@ function displayRequests() {
     queue.queue.forEach(request => {
 
         const row = `
-        <tr>
-            <td>${request.id}</td>
-            <td>${request.name}</td>
-            <td>${request.timestamp}</td>
-            <td>${request.status}</td>
-            <td>
-                <button onclick="cancelRequest(${request.id})">
-                    Cancel
-                </button>
-            </td>
-        </tr>
-        `;
+<tr>
+    <td>${request.id}</td>
+    <td>${request.name}</td>
+    <td>${request.status}</td>
+    <td>${request.timestamp}</td>
+    <td>
+        <button onclick="cancelRequest(${request.id})">
+            Cancel
+        </button>
+    </td>
+</tr>
+`;
 
         requestTable.innerHTML += row;
     });
